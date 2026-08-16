@@ -25,7 +25,7 @@ export default function BookPage() {
   const [availableDates, setAvailableDates] = useState<Date[]>([]);
   
   useEffect(() => {
-    const dates = [];
+    let dates : any[]=[];
     const today = new Date();
     for (let i = 1; i <= 14; i++) {
       const nextDate = new Date(today);
